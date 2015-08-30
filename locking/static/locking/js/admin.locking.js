@@ -203,17 +203,15 @@ var DJANGO_LOCKING = DJANGO_LOCKING || {};
             $(document).trigger('locking:disabled');
         },
         text: {
-            warn:        'Your lock on this page expires in less than %s ' +
-                         'minutes. Press save or <a href="">reload the page</a>.',
-            lock_removed: 'User "%(locked_by_name)s" removed your lock. If you save, ' +
-                         'your attempts may be thwarted due to another lock ' +
-                         ' or you may have stale data.',
-            is_locked:   'This page is locked by <em>%(locked_by_name)s</em> ' +
-                         'and editing is disabled.',
-            has_expired: 'You have lost your lock on this page. If you save, ' +
-                         'your attempts may be thwarted due to another lock ' +
-                         ' or you may have stale data.',
-            prompt_save: 'Do you wish to save the page?',
+            warn:        '您在当前页面上的锁会在 %s ' +
+                         '分钟后过期. 请保存或者 <a href="">重新载入</a>.',
+            lock_removed: '用户 "%(locked_by_name)s" 移除了您的锁. 如果现在强行保存的话, ' +
+                         '可能会与别人的锁冲突或者丢失数据',
+            is_locked:   '当前页面已被 <em>%(locked_by_name)s</em> ' +
+                         '使用，禁止编辑',
+            has_expired: '你在当前页面上的锁已经过期. 如果现在强行保存的话, ' +
+                         '可能会与别人的锁冲突或者丢失数据',
+            prompt_save: '是否保存当前页面？',
         },
         lockOwner: null,
         currentUser: null,
